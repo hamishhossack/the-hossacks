@@ -60,15 +60,16 @@ layout: default
   </header>
 
   <!-- Thumbnail -->
-  <section id="thumbnails">
+  <section id="thumbnails" class="grid">
     {% for image in site.data.gallery %}
-    <article>
+    <article class=grid-item"">
       <a
         class="thumbnail"
         href="{{ image }}"
         data-position="{{ site.thumbnail_position }}"
         ><img src="{{ image }}" alt="The Hossacks"
       /></a>
+      <h2>Photography by Voyteck</h2>
     </article>
     {% endfor %}
   </section>

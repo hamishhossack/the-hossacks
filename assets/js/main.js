@@ -502,6 +502,12 @@ var main = (function($) { var _ = {
 			_.initViewer();
 			_.initEvents();
 
+			$('.grid').masonry({
+				// options...
+				itemSelector: '.grid-item',
+				columnWidth: 200
+			});
+
 		// Initial slide.
 			window.setTimeout(function() {
 
