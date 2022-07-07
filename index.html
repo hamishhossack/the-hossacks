@@ -62,14 +62,21 @@ layout: default
   <!-- Thumbnail -->
   <section id="thumbnails" class="grid">
     {% for image in site.data.gallery %}
-    <article class=grid-item"">
+    <article class="grid-item">
       <a
         class="thumbnail"
         href="{{ image }}"
         data-position="{{ site.thumbnail_position }}"
-        ><img src="{{ image }}" alt="The Hossacks"
+      >
+        <img
+          class="lazy"
+          src="data:image/gif;base64,R0lGODlhCgAyAPAAAAAAAAAAACH5BAEAAAAALAAAAAAKADIAAAIUhI+py+0Po5y02ouz3rz7D4biiBQAOw=="
+          data-src="{{ image }}"
+          alt="The Hossacks"
       /></a>
-      <h2>Photography by Voyteck</h2>
+      <a href="https://www.london-weddingphotographer.com/" target="_blank"
+        ><h2>Photography by Voyteck</h2></a
+      >
     </article>
     {% endfor %}
   </section>
