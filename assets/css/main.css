@@ -970,7 +970,7 @@ body.is-loading-1 #main {
 
 #thumbnails article {
   position: relative;
-  width: 50%;
+  width: 100%;
   background: #101010;
   outline: 0;
 }
